@@ -1,13 +1,15 @@
 "use strict";
 
 (function (global) {
-  var domString = document.querySelectorAll("[data-eazido-slug]")
+  var domString = document.querySelectorAll("[data-eazido-bot-url]")
+
   if (domString.length < 1){
     return ;
   }
-  if (("eazidoSlug" in domString[0].dataset)){
 
-    var appSlug = domString[0].dataset["eazidoSlug"];
+  if (("eazidoBotUrl" in domString[0].dataset)){
+
+    var botUrl = domString[0].dataset["eazidoBotUrl"];
     var themeColor = "#5C6AC4";
 
     if (("themeColor" in domString[0].dataset)){
@@ -56,7 +58,7 @@
     var iFrame = document.createElement("iframe");
     iFrame.setAttribute("id", "eazido-widget-iframe");
     iFrame.setAttribute("class", "eazido-widget-iframe close");
-    iFrame.setAttribute("src", `https://${appSlug}.eazido.com/`)
+    iFrame.setAttribute("src", botUrl)
 
     mainContainer.append(widgetHeader);
     mainContainer.append(widgetContent);

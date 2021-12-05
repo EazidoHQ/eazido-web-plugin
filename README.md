@@ -4,6 +4,11 @@
 
 ```html
 <!-- Eazido widget script starts here -->
-<script src="https://d2kqbws4y4mjht.cloudfront.net/widget/main.js" data-eazido-slug="mud" async></script>
+<script
+    src="..."
+    data-eazido-bot-url=""
+    data-theme-color="#5C6AC4"
+    async>
+</script>
 <!-- Eazido widget script ends here -->
 ```
